@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://de8hb5n3n4r1w"]
+
+[ext_resource type="Texture2D" uid="uid://8sc5jde30dq2" path="res://piso.png" id="1_hlyld"]
+[ext_resource type="PackedScene" uid="uid://jegmpj3qt5iv" path="res://scences/jogador/jogador.tscn" id="2_ohysr"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_hlyld")
+offset = Vector2(640, 360)
+
+[node name="Jogador" parent="." instance=ExtResource("2_ohysr")]
+position = Vector2(536, 240)
